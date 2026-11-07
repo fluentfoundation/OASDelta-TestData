@@ -1,0 +1,63 @@
+name: Parity report
+
+# Runs the official oasdiff release and the latest OasDelta from nuget.org over every pair in pairs.json and reports
+# where their output differs. Report only: it does not fail on differences.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "41 6 * * 1" # weekly, after the snapshot
+  workflow_dispatch:
+    inputs:
+      oasdelta_version:
+        description: OasDelta version from nuget.org (blank for the latest)
+        default: ""
+
+permissions:
+  contents: read
+
+env:
+  OASDIFF_VERSION: 1.35.0
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install oasdiff ${{ env.OASDIFF_VERSION }} (official release, checksum verified)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/go" && cd "$RUNNER_TEMP/go"
+          archive="oasdiff_${OASDIFF_VERSION}_linux_amd64.tar.gz"
+          gh release download "v${OASDIFF_VERSION}" -R oasdiff/oasdiff -p "$archive" -p checksums.txt
+          grep " $archive\$" checksums.txt | sha256sum -c -
+          tar xzf "$archive"
+
+      - name: Install OasDelta from nuget.org
+        run: |
+          version="${{ github.event.inputs.oasdelta_version }}"
+          dotnet tool install OasDelta --tool-path "$RUNNER_TEMP/cs" ${version:+--version "$version"}
+
+      - name: Compare
+        run: |
+          python tools/check.py --go "$RUNNER_TEMP/go/oasdiff" --cs "$RUNNER_TEMP/cs/oasdelta" \
+            --markdown "$GITHUB_STEP_SUMMARY" --json parity.json
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: parity
+          path: parity.json

@@ -1,0 +1,18 @@
+{
+  "source": "kubernetes",
+  "version": "v1.37.0",
+  "ref": "v1.37.0",
+  "retrieved_at": "2026-11-07T19:31:27+00:00",
+  "files": {
+    "core-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.37.0/api/openapi-spec/v3/api__v1_openapi.json",
+      "sha256": "d09ab224a98fb9c0e7fd128b6f395f66b23d43b6635272109dcaaafc4a3dd9c9",
+      "bytes": 2135483
+    },
+    "apps-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.37.0/api/openapi-spec/v3/apis__apps__v1_openapi.json",
+      "sha256": "e1326db2904fd6356d2f16e6179f8ad8e4800c0112cb74ab3b21da7286df4dbe",
+      "bytes": 934942
+    }
+  }
+}

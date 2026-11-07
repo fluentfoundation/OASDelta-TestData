@@ -1,0 +1,82 @@
+{
+  "pairs": [
+    {
+      "id": "github-rest/api.github.com.yaml@2026-02-25..2026-08-28",
+      "source": "github-rest",
+      "license": "MIT",
+      "base": "specs/github-rest/2026-02-25/api.github.com.yaml",
+      "revision": "specs/github-rest/2026-08-28/api.github.com.yaml",
+      "bytes": 18856789
+    },
+    {
+      "id": "github-rest/api.github.com.yaml@2026-08-28..2026-11-06",
+      "source": "github-rest",
+      "license": "MIT",
+      "base": "specs/github-rest/2026-08-28/api.github.com.yaml",
+      "revision": "specs/github-rest/2026-11-06/api.github.com.yaml",
+      "bytes": 20788532
+    },
+    {
+      "id": "stripe/spec3.json@v2300..v2500",
+      "source": "stripe",
+      "license": "MIT",
+      "base": "specs/stripe/v2300/spec3.json",
+      "revision": "specs/stripe/v2500/spec3.json",
+      "bytes": 15859336,
+      "skip_commands": {
+        "diff": "oasdiff's YAML diff of these pairs is 5-7 GB and takes minutes per run"
+      }
+    },
+    {
+      "id": "stripe/spec3.json@v2500..v2598",
+      "source": "stripe",
+      "license": "MIT",
+      "base": "specs/stripe/v2500/spec3.json",
+      "revision": "specs/stripe/v2598/spec3.json",
+      "bytes": 16346213,
+      "skip_commands": {
+        "diff": "oasdiff's YAML diff of these pairs is 5-7 GB and takes minutes per run"
+      }
+    },
+    {
+      "id": "kubernetes/core-v1.json@v1.35.0..v1.36.0",
+      "source": "kubernetes",
+      "license": "Apache-2.0",
+      "base": "specs/kubernetes/v1.35.0/core-v1.json",
+      "revision": "specs/kubernetes/v1.36.0/core-v1.json",
+      "bytes": 4118901
+    },
+    {
+      "id": "kubernetes/apps-v1.json@v1.35.0..v1.36.0",
+      "source": "kubernetes",
+      "license": "Apache-2.0",
+      "base": "specs/kubernetes/v1.35.0/apps-v1.json",
+      "revision": "specs/kubernetes/v1.36.0/apps-v1.json",
+      "bytes": 1825208
+    },
+    {
+      "id": "kubernetes/core-v1.json@v1.36.0..v1.37.0",
+      "source": "kubernetes",
+      "license": "Apache-2.0",
+      "base": "specs/kubernetes/v1.36.0/core-v1.json",
+      "revision": "specs/kubernetes/v1.37.0/core-v1.json",
+      "bytes": 4264248
+    },
+    {
+      "id": "kubernetes/apps-v1.json@v1.36.0..v1.37.0",
+      "source": "kubernetes",
+      "license": "Apache-2.0",
+      "base": "specs/kubernetes/v1.36.0/apps-v1.json",
+      "revision": "specs/kubernetes/v1.37.0/apps-v1.json",
+      "bytes": 1866968
+    },
+    {
+      "id": "epo/v1.json@2026-11-07..latest.json@2026-11-07",
+      "source": "epo",
+      "license": "none stated (EPO terms of use apply)",
+      "base": "specs/epo/2026-11-07/v1.json",
+      "revision": "specs/epo/2026-11-07/latest.json",
+      "bytes": 104368
+    }
+  ]
+}

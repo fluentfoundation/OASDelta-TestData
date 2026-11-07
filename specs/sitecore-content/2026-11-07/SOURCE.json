@@ -1,0 +1,12 @@
+{
+  "source": "sitecore-content",
+  "version": "2026-11-07",
+  "retrieved_at": "2026-11-07T19:31:28+00:00",
+  "files": {
+    "swagger.json": {
+      "url": "https://content-api.sitecorecloud.io/swagger/v1/swagger.json",
+      "sha256": "21c7fefe6217eed64067215db087999ddc426d74ef5fc5797980373f3da14c25",
+      "bytes": 126971
+    }
+  }
+}

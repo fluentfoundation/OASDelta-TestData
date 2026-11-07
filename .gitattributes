@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# documents are stored byte for byte as served
+specs/** -text

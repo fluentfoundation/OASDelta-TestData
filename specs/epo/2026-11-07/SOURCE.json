@@ -1,0 +1,22 @@
+{
+  "source": "epo",
+  "version": "2026-11-07",
+  "retrieved_at": "2026-11-07T19:31:30+00:00",
+  "files": {
+    "v1.json": {
+      "url": "https://api.apps.epo.org/documentation/api-docs/v1",
+      "sha256": "c15e0b8ed234a50d9131ceaba86d67d994ab094dba4b70abde6fa201fe54bc62",
+      "bytes": 52148
+    },
+    "latest.json": {
+      "url": "https://api.apps.epo.org/documentation/api-docs/latest",
+      "sha256": "d54d69b56a83d5151a162a6b9859a89d1a262cb58ecac76d51c9deedef872525",
+      "bytes": 52220
+    },
+    "olf20.json": {
+      "url": "https://api.apps.epo.org/documentation/api-docs/latest-olf20-prod",
+      "sha256": "86d048294c776c118e8ddbb81eea95b25c2efd3ce69cabbe3cb1ca6306a782a3",
+      "bytes": 19270
+    }
+  }
+}

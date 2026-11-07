@@ -1,0 +1,260 @@
+{
+  "sources": [
+    {
+      "id": "github-rest",
+      "title": "GitHub REST API description",
+      "publisher": "GitHub",
+      "homepage": "https://github.com/github/rest-api-description",
+      "license": "MIT",
+      "kind": "pinned",
+      "versions": [
+        {
+          "version": "2026-02-25",
+          "retrieved_at": "2026-11-07T19:31:09+00:00",
+          "files": {
+            "api.github.com.yaml": {
+              "path": "specs/github-rest/2026-02-25/api.github.com.yaml",
+              "url": "https://raw.githubusercontent.com/github/rest-api-description/fc2c3bbd8e67364c9ed84ae528b44ae0a6cc1672/descriptions/api.github.com/api.github.com.yaml",
+              "sha256": "b7a97a8c178d2eafe255c49b70df29535d1d9629d7cdf3e76c34f397eeadb746",
+              "bytes": 9014891
+            }
+          }
+        },
+        {
+          "version": "2026-08-28",
+          "retrieved_at": "2026-11-07T19:31:10+00:00",
+          "files": {
+            "api.github.com.yaml": {
+              "path": "specs/github-rest/2026-08-28/api.github.com.yaml",
+              "url": "https://raw.githubusercontent.com/github/rest-api-description/92dc700c26e51bdb084f990f9c56a1815e5ec58a/descriptions/api.github.com/api.github.com.yaml",
+              "sha256": "654804a2abdf92dd0c692505344bb7787662a834b409f1ab27fe81f7b768e27f",
+              "bytes": 9841898
+            }
+          }
+        },
+        {
+          "version": "2026-11-06",
+          "retrieved_at": "2026-11-07T19:31:10+00:00",
+          "files": {
+            "api.github.com.yaml": {
+              "path": "specs/github-rest/2026-11-06/api.github.com.yaml",
+              "url": "https://raw.githubusercontent.com/github/rest-api-description/fe7becb42a6928434dacd8a5914404d8745e59ee/descriptions/api.github.com/api.github.com.yaml",
+              "sha256": "dd7d7e510dae3b2e43c8c7b3adabfa292bee184dd052018819999ec85293c8ae",
+              "bytes": 10946634
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "stripe",
+      "title": "Stripe API",
+      "publisher": "Stripe",
+      "homepage": "https://github.com/stripe/openapi",
+      "license": "MIT",
+      "kind": "pinned",
+      "versions": [
+        {
+          "version": "v2300",
+          "retrieved_at": "2026-11-07T19:31:23+00:00",
+          "files": {
+            "spec3.json": {
+              "path": "specs/stripe/v2300/spec3.json",
+              "url": "https://raw.githubusercontent.com/stripe/openapi/v2300/openapi/spec3.json",
+              "sha256": "7c7b7b0c3b02c899fb3a0301d99b8489b9e5f7bfd2ca699994b459abc09914e8",
+              "bytes": 7830636
+            }
+          }
+        },
+        {
+          "version": "v2500",
+          "retrieved_at": "2026-11-07T19:31:24+00:00",
+          "files": {
+            "spec3.json": {
+              "path": "specs/stripe/v2500/spec3.json",
+              "url": "https://raw.githubusercontent.com/stripe/openapi/v2500/openapi/spec3.json",
+              "sha256": "f0e0fc8fffbffda45bf5f3df59846443c1d47a3cfcbfae232eedf4743124ebee",
+              "bytes": 8028700
+            }
+          }
+        },
+        {
+          "version": "v2598",
+          "retrieved_at": "2026-11-07T19:31:25+00:00",
+          "files": {
+            "spec3.json": {
+              "path": "specs/stripe/v2598/spec3.json",
+              "url": "https://raw.githubusercontent.com/stripe/openapi/v2598/openapi/spec3.json",
+              "sha256": "7cff4cc46d0654101a36a3302f7544640f5f73e4f3cad6f264f0e23c19fa1776",
+              "bytes": 8317513
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes API (OpenAPI v3: core/v1 and apps/v1)",
+      "publisher": "The Kubernetes Authors",
+      "homepage": "https://github.com/kubernetes/kubernetes/tree/master/api/openapi-spec",
+      "license": "Apache-2.0",
+      "kind": "pinned",
+      "versions": [
+        {
+          "version": "v1.35.0",
+          "retrieved_at": "2026-11-07T19:31:26+00:00",
+          "files": {
+            "core-v1.json": {
+              "path": "specs/kubernetes/v1.35.0/core-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/api__v1_openapi.json",
+              "sha256": "45666551cf0928e4e8a9b88508f9b23aa78d2341aa27b0587457b2694717fcc1",
+              "bytes": 1990136
+            },
+            "apps-v1.json": {
+              "path": "specs/kubernetes/v1.35.0/apps-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__apps__v1_openapi.json",
+              "sha256": "8f22326dfd8be012bc6247e44bb6adb8070079c0ca9c0a527840811bccf3482e",
+              "bytes": 893182
+            }
+          }
+        },
+        {
+          "version": "v1.36.0",
+          "retrieved_at": "2026-11-07T19:31:26+00:00",
+          "files": {
+            "core-v1.json": {
+              "path": "specs/kubernetes/v1.36.0/core-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.36.0/api/openapi-spec/v3/api__v1_openapi.json",
+              "sha256": "a3cbb14c08e7832e80776e717a5658a178dccb3562cc5c1238193634b6985ff8",
+              "bytes": 2128765
+            },
+            "apps-v1.json": {
+              "path": "specs/kubernetes/v1.36.0/apps-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.36.0/api/openapi-spec/v3/apis__apps__v1_openapi.json",
+              "sha256": "4e190f85e4d9bcea04ee9a4a1501205fd4d1902766426c0e3de7efdeaa7395dc",
+              "bytes": 932026
+            }
+          }
+        },
+        {
+          "version": "v1.37.0",
+          "retrieved_at": "2026-11-07T19:31:27+00:00",
+          "files": {
+            "core-v1.json": {
+              "path": "specs/kubernetes/v1.37.0/core-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.37.0/api/openapi-spec/v3/api__v1_openapi.json",
+              "sha256": "d09ab224a98fb9c0e7fd128b6f395f66b23d43b6635272109dcaaafc4a3dd9c9",
+              "bytes": 2135483
+            },
+            "apps-v1.json": {
+              "path": "specs/kubernetes/v1.37.0/apps-v1.json",
+              "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.37.0/api/openapi-spec/v3/apis__apps__v1_openapi.json",
+              "sha256": "e1326db2904fd6356d2f16e6179f8ad8e4800c0112cb74ab3b21da7286df4dbe",
+              "bytes": 934942
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "petstore3",
+      "title": "Swagger Petstore (OpenAPI 3)",
+      "publisher": "SmartBear (swagger-api)",
+      "homepage": "https://petstore3.swagger.io/",
+      "license": "Apache-2.0",
+      "kind": "live",
+      "versions": [
+        {
+          "version": "2026-11-07",
+          "retrieved_at": "2026-11-07T19:31:27+00:00",
+          "files": {
+            "openapi.json": {
+              "path": "specs/petstore3/2026-11-07/openapi.json",
+              "url": "https://petstore3.swagger.io/api/v3/openapi.json",
+              "sha256": "00441c05add60f28da55eb4563d3fb6bbda364ba8eb7b381e2e2c98613005c82",
+              "bytes": 17106
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sitecore-content",
+      "title": "Sitecore Content API",
+      "publisher": "Sitecore",
+      "homepage": "https://content-api.sitecorecloud.io/swagger/index.html",
+      "license": "none stated",
+      "kind": "live",
+      "versions": [
+        {
+          "version": "2026-11-07",
+          "retrieved_at": "2026-11-07T19:31:28+00:00",
+          "files": {
+            "swagger.json": {
+              "path": "specs/sitecore-content/2026-11-07/swagger.json",
+              "url": "https://content-api.sitecorecloud.io/swagger/v1/swagger.json",
+              "sha256": "21c7fefe6217eed64067215db087999ddc426d74ef5fc5797980373f3da14c25",
+              "bytes": 126971
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fakerestapi",
+      "title": "FakeRESTApi.Web",
+      "publisher": "fakerestapi.azurewebsites.net",
+      "homepage": "https://fakerestapi.azurewebsites.net/index.html",
+      "license": "none stated",
+      "kind": "live",
+      "versions": [
+        {
+          "version": "2026-11-07",
+          "retrieved_at": "2026-11-07T19:31:29+00:00",
+          "files": {
+            "swagger.json": {
+              "path": "specs/fakerestapi/2026-11-07/swagger.json",
+              "url": "https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json",
+              "sha256": "c0367244f8cee7dd83856af17c4aa2027112cf77bc282047d613914804c32aa4",
+              "bytes": 27836
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "epo",
+      "title": "European Patent Office APIs",
+      "publisher": "European Patent Office",
+      "homepage": "https://api.apps.epo.org/documentation/swagger-ui/index.html",
+      "license": "none stated (EPO terms of use apply)",
+      "kind": "live",
+      "versions": [
+        {
+          "version": "2026-11-07",
+          "retrieved_at": "2026-11-07T19:31:30+00:00",
+          "files": {
+            "v1.json": {
+              "path": "specs/epo/2026-11-07/v1.json",
+              "url": "https://api.apps.epo.org/documentation/api-docs/v1",
+              "sha256": "c15e0b8ed234a50d9131ceaba86d67d994ab094dba4b70abde6fa201fe54bc62",
+              "bytes": 52148
+            },
+            "latest.json": {
+              "path": "specs/epo/2026-11-07/latest.json",
+              "url": "https://api.apps.epo.org/documentation/api-docs/latest",
+              "sha256": "d54d69b56a83d5151a162a6b9859a89d1a262cb58ecac76d51c9deedef872525",
+              "bytes": 52220
+            },
+            "olf20.json": {
+              "path": "specs/epo/2026-11-07/olf20.json",
+              "url": "https://api.apps.epo.org/documentation/api-docs/latest-olf20-prod",
+              "sha256": "86d048294c776c118e8ddbb81eea95b25c2efd3ce69cabbe3cb1ca6306a782a3",
+              "bytes": 19270
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

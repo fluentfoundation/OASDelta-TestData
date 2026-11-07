@@ -1,0 +1,13 @@
+{
+  "source": "github-rest",
+  "version": "2026-08-28",
+  "ref": "92dc700c26e51bdb084f990f9c56a1815e5ec58a",
+  "retrieved_at": "2026-11-07T19:31:10+00:00",
+  "files": {
+    "api.github.com.yaml": {
+      "url": "https://raw.githubusercontent.com/github/rest-api-description/92dc700c26e51bdb084f990f9c56a1815e5ec58a/descriptions/api.github.com/api.github.com.yaml",
+      "sha256": "654804a2abdf92dd0c692505344bb7787662a834b409f1ab27fe81f7b768e27f",
+      "bytes": 9841898
+    }
+  }
+}

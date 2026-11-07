@@ -1,0 +1,99 @@
+{
+  "user_agent": "OASDelta-TestData/1.0 (+https://github.com/fluentfoundation/OASDelta-TestData)",
+  "sources": [
+    {
+      "id": "github-rest",
+      "title": "GitHub REST API description",
+      "publisher": "GitHub",
+      "homepage": "https://github.com/github/rest-api-description",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/github/rest-api-description/main/LICENSE.md",
+      "kind": "pinned",
+      "url": "https://raw.githubusercontent.com/github/rest-api-description/{ref}/{path}",
+      "files": { "api.github.com.yaml": "descriptions/api.github.com/api.github.com.yaml" },
+      "versions": [
+        { "version": "2026-02-25", "ref": "fc2c3bbd8e67364c9ed84ae528b44ae0a6cc1672" },
+        { "version": "2026-08-28", "ref": "92dc700c26e51bdb084f990f9c56a1815e5ec58a" },
+        { "version": "2026-11-06", "ref": "fe7becb42a6928434dacd8a5914404d8745e59ee" }
+      ]
+    },
+    {
+      "id": "stripe",
+      "title": "Stripe API",
+      "publisher": "Stripe",
+      "homepage": "https://github.com/stripe/openapi",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/stripe/openapi/master/LICENSE",
+      "kind": "pinned",
+      "url": "https://raw.githubusercontent.com/stripe/openapi/{ref}/{path}",
+      "files": { "spec3.json": "openapi/spec3.json" },
+      "skip_commands": { "diff": "oasdiff's YAML diff of these pairs is 5-7 GB and takes minutes per run" },
+      "versions": [
+        { "version": "v2300", "ref": "v2300" },
+        { "version": "v2500", "ref": "v2500" },
+        { "version": "v2598", "ref": "v2598" }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes API (OpenAPI v3: core/v1 and apps/v1)",
+      "publisher": "The Kubernetes Authors",
+      "homepage": "https://github.com/kubernetes/kubernetes/tree/master/api/openapi-spec",
+      "license": "Apache-2.0",
+      "license_url": "https://raw.githubusercontent.com/kubernetes/kubernetes/master/LICENSE",
+      "kind": "pinned",
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/{ref}/{path}",
+      "files": {
+        "core-v1.json": "api/openapi-spec/v3/api__v1_openapi.json",
+        "apps-v1.json": "api/openapi-spec/v3/apis__apps__v1_openapi.json"
+      },
+      "versions": [
+        { "version": "v1.35.0", "ref": "v1.35.0" },
+        { "version": "v1.36.0", "ref": "v1.36.0" },
+        { "version": "v1.37.0", "ref": "v1.37.0" }
+      ]
+    },
+    {
+      "id": "petstore3",
+      "title": "Swagger Petstore (OpenAPI 3)",
+      "publisher": "SmartBear (swagger-api)",
+      "homepage": "https://petstore3.swagger.io/",
+      "license": "Apache-2.0",
+      "license_url": "https://raw.githubusercontent.com/swagger-api/swagger-petstore/master/LICENSE",
+      "kind": "live",
+      "endpoints": { "openapi.json": "https://petstore3.swagger.io/api/v3/openapi.json" }
+    },
+    {
+      "id": "sitecore-content",
+      "title": "Sitecore Content API",
+      "publisher": "Sitecore",
+      "homepage": "https://content-api.sitecorecloud.io/swagger/index.html",
+      "license": "none stated",
+      "kind": "live",
+      "endpoints": { "swagger.json": "https://content-api.sitecorecloud.io/swagger/v1/swagger.json" }
+    },
+    {
+      "id": "fakerestapi",
+      "title": "FakeRESTApi.Web",
+      "publisher": "fakerestapi.azurewebsites.net",
+      "homepage": "https://fakerestapi.azurewebsites.net/index.html",
+      "license": "none stated",
+      "kind": "live",
+      "endpoints": { "swagger.json": "https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json" }
+    },
+    {
+      "id": "epo",
+      "title": "European Patent Office APIs",
+      "publisher": "European Patent Office",
+      "homepage": "https://api.apps.epo.org/documentation/swagger-ui/index.html",
+      "license": "none stated (EPO terms of use apply)",
+      "kind": "live",
+      "endpoints": {
+        "v1.json": "https://api.apps.epo.org/documentation/api-docs/v1",
+        "latest.json": "https://api.apps.epo.org/documentation/api-docs/latest",
+        "olf20.json": "https://api.apps.epo.org/documentation/api-docs/latest-olf20-prod"
+      },
+      "pairs": [["v1.json", "latest.json"]]
+    }
+  ]
+}

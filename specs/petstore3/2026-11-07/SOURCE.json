@@ -1,0 +1,12 @@
+{
+  "source": "petstore3",
+  "version": "2026-11-07",
+  "retrieved_at": "2026-11-07T19:31:27+00:00",
+  "files": {
+    "openapi.json": {
+      "url": "https://petstore3.swagger.io/api/v3/openapi.json",
+      "sha256": "00441c05add60f28da55eb4563d3fb6bbda364ba8eb7b381e2e2c98613005c82",
+      "bytes": 17106
+    }
+  }
+}

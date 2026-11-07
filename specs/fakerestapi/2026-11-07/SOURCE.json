@@ -1,0 +1,12 @@
+{
+  "source": "fakerestapi",
+  "version": "2026-11-07",
+  "retrieved_at": "2026-11-07T19:31:29+00:00",
+  "files": {
+    "swagger.json": {
+      "url": "https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json",
+      "sha256": "c0367244f8cee7dd83856af17c4aa2027112cf77bc282047d613914804c32aa4",
+      "bytes": 27836
+    }
+  }
+}
