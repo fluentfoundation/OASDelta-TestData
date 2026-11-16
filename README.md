@@ -11,8 +11,9 @@ pair is two real versions of one public API, so diffing them exercises what an A
 | Source | Versions | License |
 |---|---|---|
 | [GitHub REST API](https://github.com/github/rest-api-description) (YAML, ~10 MB) | Commits from Feb, Aug and Nov 2026 | MIT |
-| [Stripe API](https://github.com/stripe/openapi) (JSON, ~8 MB) | Tags v2300, v2500, v2598 | MIT |
-| [Kubernetes](https://github.com/kubernetes/kubernetes/tree/master/api/openapi-spec) `core/v1` and `apps/v1` (JSON) | v1.35.0, v1.36.0, v1.37.0 | Apache-2.0 |
+| [Stripe API](https://github.com/stripe/openapi), v1 endpoints (`openapi/spec3.json`, JSON, ~8 MB) | Tags v2300, v2500, v2598 | MIT |
+| [Stripe API](https://github.com/stripe/openapi/tree/master/latest), v1 and v2 endpoints (`latest/openapi.spec3.json`, the public variant, JSON, ~5 MB) | Tags v2400, v2500, v2596, v2597 (`latest/` changes only with a GA release; v2597 is the latest change) | MIT |
+| [Kubernetes](https://github.com/kubernetes/kubernetes/tree/master/api/openapi-spec/v3) every API group and version, `core/v1` to `storagemigration.k8s.io/v1beta1` (JSON, 41 documents) | v1.35.0, v1.36.0, v1.37.0, v1.37.2 | Apache-2.0 |
 | [Swagger Petstore 3](https://petstore3.swagger.io/) | Weekly snapshots | Apache-2.0 |
 | [Sitecore Content API](https://content-api.sitecorecloud.io/swagger/index.html) | Weekly snapshots | None stated |
 | [FakeRESTApi](https://fakerestapi.azurewebsites.net/index.html) | Weekly snapshots | None stated |
@@ -54,6 +55,10 @@ Stripe pairs is 5–7 GB.
 Add an entry to `sources.json`, as `pinned` (git refs at a raw URL template) or `live` (endpoint URLs). Then run
 `python3 tools/fetch.py all` and commit `specs/`, `manifest.json` and `pairs.json`. Prefer sources with an open
 license and real version history, and record the license.
+
+A pinned source with `"optional_files": true` may lack some of its files in some versions: the Kubernetes API groups
+and versions come and go between releases. A file that is not there (HTTP 404) is listed under `missing` in that
+version's `SOURCE.json`, and a pair is made only where both versions have the file.
 
 ## Licensing
 

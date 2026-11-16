@@ -2,7 +2,7 @@
   "source": "kubernetes",
   "version": "v1.35.0",
   "ref": "v1.35.0",
-  "retrieved_at": "2026-11-07T19:31:26+00:00",
+  "retrieved_at": "2026-11-16T16:03:48+00:00",
   "files": {
     "core-v1.json": {
       "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/api__v1_openapi.json",
@@ -13,6 +13,183 @@
       "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__apps__v1_openapi.json",
       "sha256": "8f22326dfd8be012bc6247e44bb6adb8070079c0ca9c0a527840811bccf3482e",
       "bytes": 893182
+    },
+    "admissionregistration.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1_openapi.json",
+      "sha256": "bb1fb9432100db52e6e4d6d64f649cc62a6bb91014084c6d21b128652f41ecd6",
+      "bytes": 423259
+    },
+    "admissionregistration.k8s.io-v1alpha1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1alpha1_openapi.json",
+      "sha256": "6862547cff2125f72ee436518ee499595951cd0b4c4b369f045a6ced0a0a0be8",
+      "bytes": 233658
+    },
+    "admissionregistration.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1beta1_openapi.json",
+      "sha256": "af15890ecab6ef94c7804fecd8ee3ebacfdbb78cbabb4494b61104dbf3f77ca0",
+      "bytes": 233877
+    },
+    "apiextensions.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__apiextensions.k8s.io__v1_openapi.json",
+      "sha256": "f6eb40887f8ce499c83f6032da1b35f980ecf8e6a312c06078f1356e3aa3d3e4",
+      "bytes": 192236
+    },
+    "apiregistration.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__apiregistration.k8s.io__v1_openapi.json",
+      "sha256": "ac954399fa80c6e87f95858b50f5602f899e1307d37be47f38f1959783315daa",
+      "bytes": 146884
+    },
+    "authentication.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__authentication.k8s.io__v1_openapi.json",
+      "sha256": "cdeaa12db780e0b50d1edc547952997b2afc6c03087fa26c9b9e0da03ab49e8e",
+      "bytes": 43816
+    },
+    "authorization.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__authorization.k8s.io__v1_openapi.json",
+      "sha256": "0c108794867b569e6b7f05523a3bfb6efcaa6ebca6d8d63532c18644ed668ffa",
+      "bytes": 77913
+    },
+    "autoscaling-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__autoscaling__v1_openapi.json",
+      "sha256": "baeafa1354c0f31e75e73706ebc7bafacc9e6ab3f11769dd3534199ce3e93192",
+      "bytes": 165771
+    },
+    "autoscaling-v2.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__autoscaling__v2_openapi.json",
+      "sha256": "7ac4c0478934ff422bc9060266a390f718f03198dde8cd2ba340a429a3a950cd",
+      "bytes": 201259
+    },
+    "batch-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__batch__v1_openapi.json",
+      "sha256": "75375a3f73cf46fc9351dcf21fd57192acbebb2bae96170b0831af75e860efc4",
+      "bytes": 534298
+    },
+    "certificates.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__certificates.k8s.io__v1_openapi.json",
+      "sha256": "c34ff08d8e1aeabdc7009943b7236491dc17d0e1c87d2754d821efdc8a8662ab",
+      "bytes": 164839
+    },
+    "certificates.k8s.io-v1alpha1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__certificates.k8s.io__v1alpha1_openapi.json",
+      "sha256": "eddcae5601781fd0cacf559e7abf97503417bf459c4a9abd503e80622ecd27d1",
+      "bytes": 129091
+    },
+    "certificates.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__certificates.k8s.io__v1beta1_openapi.json",
+      "sha256": "4c7bda26716613abd5da1591a4cc688671d6c8fb502997b9621b83262425b535",
+      "bytes": 246629
+    },
+    "coordination.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__coordination.k8s.io__v1_openapi.json",
+      "sha256": "89ceffa4453bdd1d31edfa162d63b74a8eeca6dfea5e1d787e0de2391f9cabef",
+      "bytes": 148448
+    },
+    "coordination.k8s.io-v1alpha2.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__coordination.k8s.io__v1alpha2_openapi.json",
+      "sha256": "0f0051281bc15fb36c2bb2490982f075d214d68eaa386c821f0d3a3bbde1ee79",
+      "bytes": 150516
+    },
+    "coordination.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__coordination.k8s.io__v1beta1_openapi.json",
+      "sha256": "f5fe7239cc79ae6a1498c9938e3b97b229680ef17569c78a69f651a3bc15b939",
+      "bytes": 150536
+    },
+    "discovery.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__discovery.k8s.io__v1_openapi.json",
+      "sha256": "588d45f7bae86c0f2a54775d9e8af3f4b08a1d8d4e235df30bae06adc7ce90f1",
+      "bytes": 159448
+    },
+    "events.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__events.k8s.io__v1_openapi.json",
+      "sha256": "fa533d66d3249840f74ef96ce0607073663eef5025395707a2edc3820bb5c4b6",
+      "bytes": 153857
+    },
+    "flowcontrol.apiserver.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__flowcontrol.apiserver.k8s.io__v1_openapi.json",
+      "sha256": "6427dc1309377af356484863f568a261fa24f62e54d32e4bc53c1720f51da484",
+      "bytes": 252185
+    },
+    "internal.apiserver.k8s.io-v1alpha1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__internal.apiserver.k8s.io__v1alpha1_openapi.json",
+      "sha256": "8bde7e0212ff9baaf2fd303c8535ed7cbb3cd5d54b4ed2493baf7e8adc9e5605",
+      "bytes": 144885
+    },
+    "networking.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__networking.k8s.io__v1_openapi.json",
+      "sha256": "6b974984cb19f1ef1832fdfa84b67ce600eff1db354cdb49db0edb1cf87e234f",
+      "bytes": 510938
+    },
+    "networking.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__networking.k8s.io__v1beta1_openapi.json",
+      "sha256": "87330a1199787d3c0cded49a192feb2b449b1190b0e6adf51de5a1bace1487b3",
+      "bytes": 214701
+    },
+    "node.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__node.k8s.io__v1_openapi.json",
+      "sha256": "2193906b2991a786ebb7c2edabd50d0e0a590ecce0e8c3b7c17856ae7f290533",
+      "bytes": 132991
+    },
+    "policy-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__policy__v1_openapi.json",
+      "sha256": "166c6c720025c3b5a03e4cd4698a9dd876de383df07a9c0955cff8da833d51d5",
+      "bytes": 172655
+    },
+    "rbac.authorization.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__rbac.authorization.k8s.io__v1_openapi.json",
+      "sha256": "b65de9550d92bca038a9f72d3dadea088d268c39aec999c1a215314331af9f6d",
+      "bytes": 385176
+    },
+    "resource.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__resource.k8s.io__v1_openapi.json",
+      "sha256": "5dafcfc0c534fd5d987392fb8fb5d491637273251755aa02b6d28a54f7d2ce34",
+      "bytes": 470840
+    },
+    "resource.k8s.io-v1alpha3.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__resource.k8s.io__v1alpha3_openapi.json",
+      "sha256": "b7f15e0929d702b7aaee7f3bf3cdc46a8bcbd429898b4e074609c08de08f2411",
+      "bytes": 147003
+    },
+    "resource.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__resource.k8s.io__v1beta1_openapi.json",
+      "sha256": "37a6940be730819ae92265f4029f65c05f6ed2eb533a9170235939b86f439708",
+      "bytes": 473753
+    },
+    "resource.k8s.io-v1beta2.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__resource.k8s.io__v1beta2_openapi.json",
+      "sha256": "3bd28fea3cb69cac79e029f7f51f8db433b563a6b8cabddcbfd0957f5f5bd862",
+      "bytes": 473245
+    },
+    "scheduling.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__scheduling.k8s.io__v1_openapi.json",
+      "sha256": "7bce1e2f85c8eb40ba1a821f63726ac9207361182bfaec7239591680e5487d82",
+      "bytes": 126503
+    },
+    "scheduling.k8s.io-v1alpha1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__scheduling.k8s.io__v1alpha1_openapi.json",
+      "sha256": "0830ac12388b4be606b43b913a2e79bd06955b4eb1b0c93b262515d7ebe05c9a",
+      "bytes": 151546
+    },
+    "storage.k8s.io-v1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__storage.k8s.io__v1_openapi.json",
+      "sha256": "f5e5ae4c399889482b5228d7264b0d3bbdd0a12cb2358f26eaceffee610d9499",
+      "bytes": 599445
+    },
+    "storage.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__storage.k8s.io__v1beta1_openapi.json",
+      "sha256": "252360a1affa9b950d2eea33de34c2f9f8fb21e8cc53f66239e4d335d2080683",
+      "bytes": 127420
+    },
+    "storagemigration.k8s.io-v1beta1.json": {
+      "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/v1.35.0/api/openapi-spec/v3/apis__storagemigration.k8s.io__v1beta1_openapi.json",
+      "sha256": "3df99a68e6a84f06c286671fcbd2c2c597152a65c37eee497379a5a2583161e1",
+      "bytes": 145540
     }
-  }
+  },
+  "missing": [
+    "lifecycle.k8s.io-v1alpha1.json",
+    "scheduling.k8s.io-v1alpha2.json",
+    "scheduling.k8s.io-v1alpha3.json",
+    "scheduling.k8s.io-v1beta1.json",
+    "storagemigration.k8s.io-v1.json"
+  ]
 }

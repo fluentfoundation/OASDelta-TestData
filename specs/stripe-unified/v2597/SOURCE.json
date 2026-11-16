@@ -1,0 +1,13 @@
+{
+  "source": "stripe-unified",
+  "version": "v2597",
+  "ref": "v2597",
+  "retrieved_at": "2026-11-16T16:07:04+00:00",
+  "files": {
+    "openapi.spec3.json": {
+      "url": "https://raw.githubusercontent.com/stripe/openapi/v2597/latest/openapi.spec3.json",
+      "sha256": "27e7f9681bfe4423708023338fd14096600581718fc2e15efd0d946d6a522c25",
+      "bytes": 5070331
+    }
+  }
+}

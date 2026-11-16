@@ -19,7 +19,7 @@
     },
     {
       "id": "stripe",
-      "title": "Stripe API",
+      "title": "Stripe API (v1 endpoints, openapi/spec3.json)",
       "publisher": "Stripe",
       "homepage": "https://github.com/stripe/openapi",
       "license": "MIT",
@@ -35,8 +35,26 @@
       ]
     },
     {
+      "id": "stripe-unified",
+      "title": "Stripe API (v1 and v2 endpoints, latest/openapi.spec3.json)",
+      "publisher": "Stripe",
+      "homepage": "https://github.com/stripe/openapi/tree/master/latest",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/stripe/openapi/master/LICENSE",
+      "kind": "pinned",
+      "url": "https://raw.githubusercontent.com/stripe/openapi/{ref}/{path}",
+      "files": { "openapi.spec3.json": "latest/openapi.spec3.json" },
+      "skip_commands": { "diff": "oasdiff's YAML diff of Stripe's spec runs to gigabytes (5-7 GB for the v1 spec)" },
+      "versions": [
+        { "version": "v2400", "ref": "v2400" },
+        { "version": "v2500", "ref": "v2500" },
+        { "version": "v2596", "ref": "v2596" },
+        { "version": "v2597", "ref": "v2597" }
+      ]
+    },
+    {
       "id": "kubernetes",
-      "title": "Kubernetes API (OpenAPI v3: core/v1 and apps/v1)",
+      "title": "Kubernetes API (OpenAPI v3, every API group and version)",
       "publisher": "The Kubernetes Authors",
       "homepage": "https://github.com/kubernetes/kubernetes/tree/master/api/openapi-spec",
       "license": "Apache-2.0",
@@ -45,13 +63,54 @@
       "url": "https://raw.githubusercontent.com/kubernetes/kubernetes/{ref}/{path}",
       "files": {
         "core-v1.json": "api/openapi-spec/v3/api__v1_openapi.json",
-        "apps-v1.json": "api/openapi-spec/v3/apis__apps__v1_openapi.json"
+        "apps-v1.json": "api/openapi-spec/v3/apis__apps__v1_openapi.json",
+        "admissionregistration.k8s.io-v1.json": "api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1_openapi.json",
+        "admissionregistration.k8s.io-v1alpha1.json": "api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1alpha1_openapi.json",
+        "admissionregistration.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__admissionregistration.k8s.io__v1beta1_openapi.json",
+        "apiextensions.k8s.io-v1.json": "api/openapi-spec/v3/apis__apiextensions.k8s.io__v1_openapi.json",
+        "apiregistration.k8s.io-v1.json": "api/openapi-spec/v3/apis__apiregistration.k8s.io__v1_openapi.json",
+        "authentication.k8s.io-v1.json": "api/openapi-spec/v3/apis__authentication.k8s.io__v1_openapi.json",
+        "authorization.k8s.io-v1.json": "api/openapi-spec/v3/apis__authorization.k8s.io__v1_openapi.json",
+        "autoscaling-v1.json": "api/openapi-spec/v3/apis__autoscaling__v1_openapi.json",
+        "autoscaling-v2.json": "api/openapi-spec/v3/apis__autoscaling__v2_openapi.json",
+        "batch-v1.json": "api/openapi-spec/v3/apis__batch__v1_openapi.json",
+        "certificates.k8s.io-v1.json": "api/openapi-spec/v3/apis__certificates.k8s.io__v1_openapi.json",
+        "certificates.k8s.io-v1alpha1.json": "api/openapi-spec/v3/apis__certificates.k8s.io__v1alpha1_openapi.json",
+        "certificates.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__certificates.k8s.io__v1beta1_openapi.json",
+        "coordination.k8s.io-v1.json": "api/openapi-spec/v3/apis__coordination.k8s.io__v1_openapi.json",
+        "coordination.k8s.io-v1alpha2.json": "api/openapi-spec/v3/apis__coordination.k8s.io__v1alpha2_openapi.json",
+        "coordination.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__coordination.k8s.io__v1beta1_openapi.json",
+        "discovery.k8s.io-v1.json": "api/openapi-spec/v3/apis__discovery.k8s.io__v1_openapi.json",
+        "events.k8s.io-v1.json": "api/openapi-spec/v3/apis__events.k8s.io__v1_openapi.json",
+        "flowcontrol.apiserver.k8s.io-v1.json": "api/openapi-spec/v3/apis__flowcontrol.apiserver.k8s.io__v1_openapi.json",
+        "internal.apiserver.k8s.io-v1alpha1.json": "api/openapi-spec/v3/apis__internal.apiserver.k8s.io__v1alpha1_openapi.json",
+        "lifecycle.k8s.io-v1alpha1.json": "api/openapi-spec/v3/apis__lifecycle.k8s.io__v1alpha1_openapi.json",
+        "networking.k8s.io-v1.json": "api/openapi-spec/v3/apis__networking.k8s.io__v1_openapi.json",
+        "networking.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__networking.k8s.io__v1beta1_openapi.json",
+        "node.k8s.io-v1.json": "api/openapi-spec/v3/apis__node.k8s.io__v1_openapi.json",
+        "policy-v1.json": "api/openapi-spec/v3/apis__policy__v1_openapi.json",
+        "rbac.authorization.k8s.io-v1.json": "api/openapi-spec/v3/apis__rbac.authorization.k8s.io__v1_openapi.json",
+        "resource.k8s.io-v1.json": "api/openapi-spec/v3/apis__resource.k8s.io__v1_openapi.json",
+        "resource.k8s.io-v1alpha3.json": "api/openapi-spec/v3/apis__resource.k8s.io__v1alpha3_openapi.json",
+        "resource.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__resource.k8s.io__v1beta1_openapi.json",
+        "resource.k8s.io-v1beta2.json": "api/openapi-spec/v3/apis__resource.k8s.io__v1beta2_openapi.json",
+        "scheduling.k8s.io-v1.json": "api/openapi-spec/v3/apis__scheduling.k8s.io__v1_openapi.json",
+        "scheduling.k8s.io-v1alpha1.json": "api/openapi-spec/v3/apis__scheduling.k8s.io__v1alpha1_openapi.json",
+        "scheduling.k8s.io-v1alpha2.json": "api/openapi-spec/v3/apis__scheduling.k8s.io__v1alpha2_openapi.json",
+        "scheduling.k8s.io-v1alpha3.json": "api/openapi-spec/v3/apis__scheduling.k8s.io__v1alpha3_openapi.json",
+        "scheduling.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__scheduling.k8s.io__v1beta1_openapi.json",
+        "storage.k8s.io-v1.json": "api/openapi-spec/v3/apis__storage.k8s.io__v1_openapi.json",
+        "storage.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__storage.k8s.io__v1beta1_openapi.json",
+        "storagemigration.k8s.io-v1.json": "api/openapi-spec/v3/apis__storagemigration.k8s.io__v1_openapi.json",
+        "storagemigration.k8s.io-v1beta1.json": "api/openapi-spec/v3/apis__storagemigration.k8s.io__v1beta1_openapi.json"
       },
       "versions": [
         { "version": "v1.35.0", "ref": "v1.35.0" },
         { "version": "v1.36.0", "ref": "v1.36.0" },
-        { "version": "v1.37.0", "ref": "v1.37.0" }
-      ]
+        { "version": "v1.37.0", "ref": "v1.37.0" },
+        { "version": "v1.37.2", "ref": "v1.37.2" }
+      ],
+      "optional_files": true
     },
     {
       "id": "petstore3",
