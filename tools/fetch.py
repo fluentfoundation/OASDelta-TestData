@@ -16,6 +16,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,12 +26,22 @@ with open(os.path.join(ROOT, "sources.json"), encoding="utf-8") as f:
 SOURCES = CONFIG["sources"]
 
 
+class NotFound(RuntimeError):
+    pass
+
+
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": CONFIG["user_agent"], "Accept": "application/json, application/yaml, */*"})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                raise NotFound(f"GET {url}: 404") from e
+            if attempt == 2:
+                raise RuntimeError(f"GET {url}: {e}") from e
+            time.sleep(5 * (attempt + 1))
         except Exception as e:  # noqa: BLE001
             if attempt == 2:
                 raise RuntimeError(f"GET {url}: {e}") from e
@@ -88,22 +99,32 @@ def pinned():
         for v in src["versions"]:
             vdir = os.path.join(SPECS, src["id"], v["version"])
             meta = read_meta(vdir)
+            # optional_files: a file a version does not have (a Kubernetes API group added or removed) is recorded
+            # as missing instead of failing the fetch
             if meta and all(
-                os.path.exists(os.path.join(vdir, name))
-                and sha256(open(os.path.join(vdir, name), "rb").read()) == meta["files"][name]["sha256"]
+                name in meta.get("missing", [])
+                or (name in meta["files"] and os.path.exists(os.path.join(vdir, name))
+                    and sha256(open(os.path.join(vdir, name), "rb").read()) == meta["files"][name]["sha256"])
                 for name in src["files"]
             ):
                 continue
-            files = {}
+            files, missing = {}, []
             for name, path in src["files"].items():
                 url = src["url"].format(ref=v["ref"], path=path)
-                data = get(url)
+                try:
+                    data = get(url)
+                except NotFound:
+                    if not src.get("optional_files"):
+                        raise
+                    missing.append(name)
+                    continue
                 if not looks_like_openapi(data):
                     raise RuntimeError(f"{url} did not return an OpenAPI document")
                 write(os.path.join(vdir, name), data)
                 files[name] = {"url": url, "sha256": sha256(data), "bytes": len(data)}
                 print(f"  {src['id']}/{v['version']}/{name}  {len(data):,} bytes")
-            write_meta(vdir, {"source": src["id"], "version": v["version"], "ref": v["ref"], "retrieved_at": now(), "files": files})
+            write_meta(vdir, {"source": src["id"], "version": v["version"], "ref": v["ref"], "retrieved_at": now(), "files": files,
+                              **({"missing": missing} if missing else {})})
 
 
 def snapshot(ids):
