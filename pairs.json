@@ -71,12 +71,36 @@
       "bytes": 1866968
     },
     {
+      "id": "epo/v1.json@2026-11-07..2026-11-16",
+      "source": "epo",
+      "license": "none stated (EPO terms of use apply)",
+      "base": "specs/epo/2026-11-07/v1.json",
+      "revision": "specs/epo/2026-11-16/v1.json",
+      "bytes": 104295
+    },
+    {
+      "id": "epo/latest.json@2026-11-07..2026-11-16",
+      "source": "epo",
+      "license": "none stated (EPO terms of use apply)",
+      "base": "specs/epo/2026-11-07/latest.json",
+      "revision": "specs/epo/2026-11-16/latest.json",
+      "bytes": 104439
+    },
+    {
       "id": "epo/v1.json@2026-11-07..latest.json@2026-11-07",
       "source": "epo",
       "license": "none stated (EPO terms of use apply)",
       "base": "specs/epo/2026-11-07/v1.json",
       "revision": "specs/epo/2026-11-07/latest.json",
       "bytes": 104368
+    },
+    {
+      "id": "epo/v1.json@2026-11-16..latest.json@2026-11-16",
+      "source": "epo",
+      "license": "none stated (EPO terms of use apply)",
+      "base": "specs/epo/2026-11-16/v1.json",
+      "revision": "specs/epo/2026-11-16/latest.json",
+      "bytes": 104366
     }
   ]
 }
